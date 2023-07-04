@@ -17,6 +17,26 @@ i.bi {
 	font-size: 70px;
 }
 
+.cta a {
+	font-size: 1.5rem;
+}	
+
+@media (max-width: 768px) {
+	.introduction {
+		height: 100vw;
+	}
+
+	.introduction h1 {
+		font-size: 50px;
+	}
+}
+
+@media (max-width: 991px) {
+	.cta a {
+		font-size: 1.25rem;
+	}
+}
+
 .introduction i.chevron {
 	position: absolute;
 	bottom: 0;
@@ -132,8 +152,10 @@ footer hr {
 	animation: move-left-right 0.3s forwards ease-out;
 }
 
-.nav {
-	border-right: 2px solid white;
+@media (min-width: 992px) {
+	.nav {
+		border-right: 2px solid white;
+	}
 }
 
 .nav-link.active {
@@ -152,4 +174,10 @@ footer hr {
 .nav-link:hover {
 	color: #191919;
 	background-position: left;
+}
+
+@media (max-width: 768px) {
+	.chevron {
+		display: none;
+	}
 }
