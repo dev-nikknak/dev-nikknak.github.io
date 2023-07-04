@@ -1,0 +1,154 @@
+body {
+	background: #151515;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+
+i.bi {
+	color: white;
+	font-size: 30px;
+}
+
+.introduction {
+	height: 50vw;
+}
+
+.introduction h1 {
+	font-size: 70px;
+}
+
+.introduction i.chevron {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	right: 50%;
+	animation: bounce 1.5s infinite ease-in-out;
+}
+
+@keyframes bounce {
+	0% {
+		bottom: 0px;
+	}
+
+	50% {
+		bottom: 10px;
+	}
+
+	100% {
+		bottom: 0;
+	}
+}
+
+.title {
+	border-left: 4px solid #252525;
+	padding: 0;
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+
+.portfolio img {
+	border-radius: 13px;
+}
+
+.link-underline {
+	border-bottom: 2px solid white;
+	display: inline-block;
+}
+
+.link-hover-fill {
+	color: white;
+	transition: 0.3s ease-out;
+	background: linear-gradient(to left, transparent 50%, white 50%) right;
+	background-size: 300%;
+}
+
+.link-hover-fill:hover {
+	color: #191919;
+	background-position: left;
+}
+
+.link-hover-fill:hover i {
+	color: #191919;
+}
+
+a {
+	text-decoration: none;
+}
+
+footer hr {
+	border-top: 2px solid #252525;
+	opacity: 1;
+}
+
+.portfolio-image {
+	display: block;
+	background-size: cover;
+	background-position: center;
+	min-height: 420px;
+	width: 100%;
+	border-radius: 15px;
+	position: relative;
+	overflow: hidden;
+}
+
+.portfolio-image .overlay {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+@keyframes overlay-left-right {
+	0% {
+		margin-left: -400px;
+	}
+
+	100% {
+		margin-left: 0;
+	}
+}
+
+@keyframes move-left-right {
+	 0% {
+	 	margin-left: -400px;
+	 }
+
+	 100% {
+	 	margin-left: 0;
+	 }
+}
+
+.portfolio-image:hover .overlay {
+	display: flex;
+	animation: overlay-left-right 0.3s forwards ease-out;
+}
+
+.portfolio-image:hover .overlay i {
+	animation: move-left-right 0.3s forwards ease-out;
+}
+
+.nav {
+	border-right: 2px solid white;
+}
+
+.nav-link.active {
+	background: white;
+	color: #191919;
+}
+
+.nav-link {
+	color: white;
+	transition: 0.3s ease-out;
+	background: linear-gradient(to left, transparent 50%, white 50%) right;
+	background-size: 300%;
+}
+
+.nav-link:hover {
+	color: #191919;
+	background-position: left;
+}
