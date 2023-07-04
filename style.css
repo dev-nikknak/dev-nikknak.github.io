@@ -146,6 +146,7 @@ footer hr {
 	transition: 0.3s ease-out;
 	background: linear-gradient(to left, transparent 50%, white 50%) right;
 	background-size: 300%;
+	margin-bottom: 10px;
 }
 
 .nav-link:hover {
